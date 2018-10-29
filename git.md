@@ -42,3 +42,11 @@ Some time I do not configure correctly my user on a git repo localy. Hence some 
   ```bash
   git push orign +branch
   ```
+  
+  ## Keep fork repo sync with upstream
+  
+  ```bash
+  git fetch upstream
+  git checkout master
+  git merge upstream/master
+  ```
