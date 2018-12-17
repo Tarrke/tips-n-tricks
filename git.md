@@ -50,3 +50,14 @@ Some time I do not configure correctly my user on a git repo localy. Hence some 
   git checkout master
   git merge upstream/master
   ```
+
+## Send a non git local directory to a github repository :
+```bash
+git init
+git config user.name = Toto
+git config user.email = toto@sky.org 
+git add something
+git commit -m "Copy local to remote"
+git remote add origin https://github.com/Tarrke/test_git.git
+git push -u origin master
+```
